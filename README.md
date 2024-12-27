@@ -9,3 +9,5 @@ Analisi linguistica di corpora.
 - <code>[corpus2.txt](corpus2.txt)</code> tratto da _The Exacting, Expansive Mind of Christopher Nolan_ Oct 30, 2014 di New York Times
 
 ## Python
+- <code>[programma1.py](programma1.py)</code>
+- <code>[programma2.py](programma2.py)</code>
