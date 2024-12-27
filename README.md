@@ -11,3 +11,8 @@ Analisi linguistica di corpora.
 ## Python
 - <code>[programma1.py](programma1.py)</code>
 - <code>[programma2.py](programma2.py)</code>
+
+## Output
+- <code>[output1.txt](output1.txt)</code>
+- <code>[output2.1.txt](output2.1.txt)</code>
+- <code>[output2.2.txt](output2.2.txt)</code>
