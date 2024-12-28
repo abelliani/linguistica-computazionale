@@ -1,3 +1,5 @@
+#Programma 1 di Andrea Belliani, matricola 596864, a.a. 2024-2025
+
 import nltk
 import string
 import sklearn
@@ -246,9 +248,9 @@ def main(file_path1, file_path2):
         outfile.write(f"Risultati Corpus 1 - The Picture of Dorian Gray (Chapter I):\nNumero di frasi: {sentences_length1}\nNumero di token: {length_corpus1}\nMedia lunghezza frasi: {avg_sentences_length1}\nMedia lunghezza token: {avg_tokens_length1}\nDistribuzione PoS primi 1000 token: {pos_distribution1}\nDimensione del vocabolario calcolata ogni 200 token: {length_vocabulary1}\nTTR calcolata ogni 200 token: {ttr1}\nNumeno di lemmi distinti: {length_lemmas1}\nNumero medio di lemmi per frase: {avg_lemmas_per_sentence1}\nDistribuzione di frasi positive: {positive_sentences1}\nDistribuzione di frasi negative: {negative_sentences1}\nPolarità del documento: {total_polarity1}\n\n")
         outfile.write(f"Risultati Corpus 2 - The Exacting, Expansive Mind of Christopher Nolan:\nNumero di frasi: {sentences_length2}\nNumero di token: {length_corpus2}\nMedia lunghezza frasi: {avg_sentences_length2}\nMedia lunghezza token: {avg_tokens_length2}\nDistribuzione PoS primi 1000 token: {pos_distribution2}\nDimensione del vocabolario calcolata ogni 200 token: {length_vocabulary2}\nTTR calcolata ogni 200 token: {ttr2}\nNumeno di lemmi distinti: {length_lemmas2}\nNumero medio di lemmi per frase: {avg_lemmas_per_sentence2}\nDistribuzione di frasi positive: {positive_sentences2}\nDistribuzione di frasi negative: {negative_sentences2}\nPolarità del documento: {total_polarity2}\n\n")
         outfile.write("Distribuzione delle parti del discorso (PoS):\n")
-        outfile.write("PoS\tCorpus 1\tCorpus 2\n")
+        outfile.write("{:<10}  {:<10}  {:<10}\n".format("PoS", "Corpus 1", "Corpus 2"))  # Aggiunge formattazione per le intestazioni
         for pos in all_pos:
-            outfile.write(f"{pos}:\t{pos_distribution1.get(pos, 0)}\t{pos_distribution2.get(pos, 0)}\n")
+            outfile.write("{:<10}  {:<10}  {:<10}\n".format(pos, pos_distribution1.get(pos, 0), pos_distribution2.get(pos, 0))) # Aggiunge formattazione per i dati
 
 if __name__ == "__main__":
     # Definisco i percorsi dei file
