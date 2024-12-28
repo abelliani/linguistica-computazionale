@@ -183,11 +183,11 @@ def polarity_analyze(sentences, dataset_path="movie_reviews"):
 # funzione che calcola distribuzione delle frasi positive e negative
 def polarity_distribution(prediction):
     try:
-        negative = prediction.count(0)  # Supponendo che 0 sia "negative"
-        positive = prediction.count(1)  # Supponendo che 1 sia "positive"
-        distribuzione_neg = negative / len(prediction) * 100 if len(prediction) > 0 else 0
-        distribuzione_pos = positive / len(prediction) * 100 if len(prediction) > 0 else 0
-        return distribuzione_pos, distribuzione_neg
+        negative = prediction.count(0)
+        positive = prediction.count(1)
+        negative_distribution = negative / len(prediction) * 100 if len(prediction) > 0 else 0
+        positive_distribution = positive / len(prediction) * 100 if len(prediction) > 0 else 0
+        return positive_distribution, negative_distribution
     except Exception as e:
         print(f"Errore durante il calcolo della distribuzione: {e}")
         return 0, 0
