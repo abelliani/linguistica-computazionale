@@ -382,18 +382,44 @@ def main(file_path):
             outfile.write("Risultati Corpus 1 - The Picture of Dorian Gray (Chapter I):\n")
         else:
             outfile.write("Risultati Corpus 2 - The Exacting, Expansive Mind of Christopher Nolan:\n")
-        outfile.write(f"Top-50 Sostantivi: \n{top_nouns}\n")
-        outfile.write(f"\nTop-50 Avverbi: \n{top_adverbs}\n")
-        outfile.write(f"\nTop-50 Aggettivi: \n{top_adjectives}\n")
+        outfile.write("\nTop 50 sostantivi più frequenti:\n")
+        for noun, freq in top_nouns.items():
+            outfile.write(f"{noun} : {freq}\n")
+
+        outfile.write("\nTop 50 avverbi più frequenti:\n")
+        for adverb, freq in top_adverbs.items():
+            outfile.write(f"{adverb} : {freq}\n")
+
+        outfile.write("\nTop 50 aggettivi più frequenti:\n")
+        for adjective, freq in top_adjectives.items():
+            outfile.write(f"{adjective} : {freq}\n")
         for n in range(1, 4):
-            outfile.write(f"\nTop-20 n-grammi per n={n}: \n{top_ngrams[(n-1)*20:n*20]}\n")
+            outfile.write(f"\nTop-20 n-grammi per n={n}: \n")
+            for ngram, freq in top_ngrams[(n-1)*20:n*20]:
+                outfile.write(f"{(ngram)} : {freq}\n")
         for n in range(1, 6):
-            outfile.write(f"\nTop-20 n-grammi di PoS per n={n}: \n{top_pos_ngrams[(n-1)*20:n*20]}\n")
-        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per frequenza decrescente: \n{top_bigrams}\n")
-        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per probabilità condizionata massima: \n{max_conditional_probability}\n")
-        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per probabilità congiunta massima: \n{max_joint_probability}\n")
-        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per MI massima: \n{max_mutual_information}\n")
-        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per LMI massima: \n{max_local_mutual_information}\n")
+            outfile.write(f"\nTop-20 n-grammi di PoS per n={n}: \n")
+            for pos_ngram, freq in top_pos_ngrams[(n-1)*20:n*20]:
+                outfile.write(f"{pos_ngram} : {freq}\n")
+        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per frequenza decrescente: \n")
+        for bigram, freq in top_bigrams[:10]:
+            outfile.write(f"{bigram} : {freq}\n")
+
+        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per probabilità condizionata massima: \n")
+        for bigram, cond_prob in max_conditional_probability:
+            outfile.write(f"{bigram} : {cond_prob}\n")
+
+        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per probabilità congiunta massima: \n")
+        for bigram, joint_prob in max_joint_probability:
+            outfile.write(f"{bigram} : {joint_prob}\n")
+
+        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per MI massima: \n")
+        for bigram, mi in max_mutual_information:
+            outfile.write(f"{bigram} : {mi}\n")
+
+        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per LMI massima: \n")
+        for bigram, lmi in max_local_mutual_information:
+            outfile.write(f"{bigram} : {lmi}\n")
         outfile.write(f"\nElementi comuni ai Top-10 per MI e LMI: \n{common_elements_count}\n")
         outfile.write(f"\nFrase con media di frequenza più alta: \n{max_sentence} ({max_avg_freq})\n")
         outfile.write(f"\nFrase con media di frequenza più bassa: \n{min_sentence} ({min_avg_freq})\n")
@@ -401,7 +427,9 @@ def main(file_path):
         outfile.write(f"\nPercentuale di Stopwords: \n{stopwords_percentage}\n")
         outfile.write(f"\nNumero di pronomi personali: \n{personal_pronouns_count}\n")
         outfile.write(f"\nMedia di pronomi personali per frase: \n{avg_personal_pronouns}\n")
-        outfile.write(f"\nTop-15 Named Entities: \n{top_named_entities}\n")
+        outfile.write(f"\nTop-15 Named Entities:\n")
+        for entity, freq in top_named_entities.items():
+            outfile.write(f"{entity} : {freq}\n")
 
     
 if __name__ == "__main__":
