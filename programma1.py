@@ -1,9 +1,8 @@
-#Programma 1 di Andrea Belliani, matricola 596864, a.a. 2024-2025
+# Programma 1 di Andrea Belliani, 596864, Progetto LC a.a. 2024-2025
 
 import nltk
 import string
-import sklearn
-from collections import Counter
+from nltk import FreqDist
 from nltk.stem import WordNetLemmatizer
 from sklearn.datasets import load_files
 from sklearn.model_selection import train_test_split
@@ -11,10 +10,11 @@ from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text  import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report
-from sklearn.datasets import fetch_20newsgroups
 
+# Download risorse necessarie di NLTK
 nltk.download('averaged_perceptron_tagger_eng')
 nltk.download('wordnet')
+nltk.download('punkt')
 
 # funzione che legge in input il file e restituisce il contenuto
 def read_file(file_path):
@@ -81,8 +81,8 @@ def get_pos_distribution(all_tokens):
     try:
         pos_tags = nltk.pos_tag(all_tokens) # Calcola le parti del discorso dei token
         pos_only = [pos for token, pos in pos_tags] # Crea una lista con le sole parti del discorso
-        pos_distribution = Counter(pos_only) # Calcola la distribuzione delle parti del discorso
-        return pos_distribution
+        pos_distribution = FreqDist(pos_only) # Calcola la distribuzione delle parti del discorso
+        return dict(pos_distribution)
     except Exception as e:
         print(f"Errore durante il calcolo delle parti del discorso: {e}")
         return None
@@ -203,10 +203,11 @@ def total_polarity(prediction):
 
 # funzione principale che analizza i due corpora richiamando le funzioni ausiliarie e salva i risultati in un file di output
 def main(file_path1, file_path2):
-    text1 = read_file(file_path1)
-    text2 = read_file(file_path2)
     OUTPUT_FILE = "output1.txt"
     POS_SLICING = 1000
+
+    text1 = read_file(file_path1)
+    text2 = read_file(file_path2)
     
     sentences1, sentences_length1 = get_sentences_and_length(text1)
     sentences2, sentences_length2 = get_sentences_and_length(text2)

@@ -1,0 +1,72 @@
+Risultati Corpus 2 - The Exacting, Expansive Mind of Christopher Nolan:
+Top-50 Sostantivi: 
+{'”': 114, 'Nolan': 97, '’': 91, '“': 68, 'film': 35, 's': 32, '—': 31, 'movies': 28, 't': 26, 'movie': 18, 'time': 16, 'people': 14, 'films': 14, 'audience': 10, 'work': 10, 'something': 10, 'theater': 9, 'Interstellar': 9, 'studio': 9, 'set': 8, 'screen': 8, 'Batman': 8, 'Dark': 8, 'Knight': 8, 'way': 8, 'Caine': 8, '‘': 8, 'years': 7, 'Hollywood': 7, 'Soderbergh': 7, 'Cole': 6, 'postproduction': 6, 'fact': 6, 'space': 6, 'tea': 6, 'lot': 6, 'reality': 6, 'Memento': 6, 'Jonah': 6, 'relationship': 6, 'sense': 6, 'director': 5, 'dream': 5, 'head': 5, 'McConaughey': 5, 'things': 5, 'London': 5, 'Emma': 5, 'production': 5, 'scale': 5}
+
+Top-50 Avverbi: 
+{'not': 28, 'just': 14, 'only': 13, 'up': 11, 'very': 11, 'never': 9, 'so': 9, 'rather': 8, 'now': 7, 'most': 7, 'even': 7, 'almost': 6, 'back': 6, 'there': 6, 'well': 6, 'then': 6, 'also': 6, 'd': 5, 'as': 5, 'always': 5, 'perhaps': 4, 'out': 4, 's': 4, 'however': 4, 'really': 4, 'enough': 4, 'away': 4, 'more': 4, 'too': 3, 'right': 3, 'much': 3, 'off': 3, 'often': 3, 'slightly': 2, 'ever': 2, 'long': 2, 'unconsciously': 2, 'else': 2, 'first': 2, 'Not': 2, 'later': 2, 'once': 2, 'actually': 2, 'twice': 2, 'pretty': 2, 'better': 2, 'about': 2, 'm': 2, 'Even': 2, 'speculatively': 2}
+
+Top-50 Aggettivi: 
+{'’': 23, '“': 21, 's': 16, 'own': 15, 'more': 10, 'other': 9, 'little': 6, 'technical': 6, 'first': 6, 'll': 5, 'much': 5, 're': 5, 'many': 4, 'early': 4, 'sure': 4, 'final': 4, 'last': 4, 'digital': 4, 'such': 4, 'important': 4, '”': 4, 'least': 4, 'real': 4, 'same': 4, 'good': 4, 'blue': 3, 'only': 3, 'comfortable': 3, 'theatrical': 3, 'best': 3, 'high': 3, 'bad': 3, 'next': 3, 'd': 3, 'small': 3, 'few': 3, 'second': 3, 'visionary': 3, 'better': 3, 've': 3, 'English': 3, 'different': 3, 'powerful': 3, 'plausible': 3, 'original': 3, 'personal': 3, 'Interstellar': 3, 'future': 2, 'new': 2, 'particular': 2}
+
+Top-20 n-grammi per n=1: 
+[((',',), 473), (('the',), 345), (('.',), 242), (('of',), 206), (('to',), 190), (('’',), 182), (('a',), 179), (('and',), 169), (('“',), 141), (('”',), 140), (('in',), 123), (('he',), 116), (('s',), 100), (('Nolan',), 99), (('that',), 99), (('his',), 94), (('on',), 68), (('it',), 61), (('was',), 60), (('with',), 59)]
+
+Top-20 n-grammi per n=2: 
+[(('’', 's'), 100), ((',', 'and'), 45), (('.', '“'), 40), ((',', '”'), 37), (('in', 'the'), 34), (('of', 'the'), 32), (('’', 't'), 29), ((',', 'the'), 28), (('Nolan', '’'), 25), (('.', 'He'), 24), (('.', 'Nolan'), 23), ((',', 'he'), 21), ((',', '“'), 20), (('told', 'me'), 20), (('with', 'a'), 18), (('”', 'Nolan'), 18), (('to', 'the'), 18), (('.', 'The'), 17), (('to', 'be'), 17), (('of', 'his'), 16)]
+
+Top-20 n-grammi per n=3: 
+[(('Nolan', '’', 's'), 25), (('“', 'Interstellar', '”'), 11), (('it', '’', 's'), 11), ((',', '”', 'he'), 10), ((',', 'and', 'he'), 9), ((',', '”', 'Nolan'), 8), (('“', 'The', 'Dark'), 8), (('The', 'Dark', 'Knight'), 8), ((',', 'and', 'the'), 7), (('he', '’', 's'), 7), (('that', '’', 's'), 7), (('said', ',', '‘'), 7), (('didn', '’', 't'), 6), (('told', 'me', ','), 6), (('don', '’', 't'), 6), (('of', 'Nolan', '’'), 5), ((',', 'and', 'I'), 5), (('.', 'Nolan', 'is'), 5), (('he', 'said', ','), 5), (('he', 'told', 'me'), 5)]
+
+Top-20 n-grammi di PoS per n=1: 
+[(('NNP',), 1), (('CC',), 1), (('CD',), 1), (('WDT',), 1), ((':',), 1), (('VBD',), 1), (('IN',), 1), (('.',), 1), (('$',), 1), ((')',), 1), (('VBN',), 1), (("''",), 1), (('VBZ',), 1), (('JJS',), 1), (('PRP',), 1), (('WP$',), 1), (('WP',), 1), (('(',), 1), (('RBR',), 1), (('VB',), 1)]
+
+Top-20 n-grammi di PoS per n=2: 
+[(('NNP', 'CC'), 1), (('CC', 'CD'), 1), (('CD', 'WDT'), 1), (('WDT', ':'), 1), ((':', 'VBD'), 1), (('VBD', 'IN'), 1), (('IN', '.'), 1), (('.', '$'), 1), (('$', ')'), 1), ((')', 'VBN'), 1), (('VBN', "''"), 1), (("''", 'VBZ'), 1), (('VBZ', 'JJS'), 1), (('JJS', 'PRP'), 1), (('PRP', 'WP$'), 1), (('WP$', 'WP'), 1), (('WP', '('), 1), (('(', 'RBR'), 1), (('RBR', 'VB'), 1), (('VB', 'PDT'), 1)]
+
+Top-20 n-grammi di PoS per n=3: 
+[(('NNP', 'CC', 'CD'), 1), (('CC', 'CD', 'WDT'), 1), (('CD', 'WDT', ':'), 1), (('WDT', ':', 'VBD'), 1), ((':', 'VBD', 'IN'), 1), (('VBD', 'IN', '.'), 1), (('IN', '.', '$'), 1), (('.', '$', ')'), 1), (('$', ')', 'VBN'), 1), ((')', 'VBN', "''"), 1), (('VBN', "''", 'VBZ'), 1), (("''", 'VBZ', 'JJS'), 1), (('VBZ', 'JJS', 'PRP'), 1), (('JJS', 'PRP', 'WP$'), 1), (('PRP', 'WP$', 'WP'), 1), (('WP$', 'WP', '('), 1), (('WP', '(', 'RBR'), 1), (('(', 'RBR', 'VB'), 1), (('RBR', 'VB', 'PDT'), 1), (('VB', 'PDT', 'MD'), 1)]
+
+Top-20 n-grammi di PoS per n=4: 
+[(('NNP', 'CC', 'CD', 'WDT'), 1), (('CC', 'CD', 'WDT', ':'), 1), (('CD', 'WDT', ':', 'VBD'), 1), (('WDT', ':', 'VBD', 'IN'), 1), ((':', 'VBD', 'IN', '.'), 1), (('VBD', 'IN', '.', '$'), 1), (('IN', '.', '$', ')'), 1), (('.', '$', ')', 'VBN'), 1), (('$', ')', 'VBN', "''"), 1), ((')', 'VBN', "''", 'VBZ'), 1), (('VBN', "''", 'VBZ', 'JJS'), 1), (("''", 'VBZ', 'JJS', 'PRP'), 1), (('VBZ', 'JJS', 'PRP', 'WP$'), 1), (('JJS', 'PRP', 'WP$', 'WP'), 1), (('PRP', 'WP$', 'WP', '('), 1), (('WP$', 'WP', '(', 'RBR'), 1), (('WP', '(', 'RBR', 'VB'), 1), (('(', 'RBR', 'VB', 'PDT'), 1), (('RBR', 'VB', 'PDT', 'MD'), 1), (('VB', 'PDT', 'MD', 'EX'), 1)]
+
+Top-20 n-grammi di PoS per n=5: 
+[(('NNP', 'CC', 'CD', 'WDT', ':'), 1), (('CC', 'CD', 'WDT', ':', 'VBD'), 1), (('CD', 'WDT', ':', 'VBD', 'IN'), 1), (('WDT', ':', 'VBD', 'IN', '.'), 1), ((':', 'VBD', 'IN', '.', '$'), 1), (('VBD', 'IN', '.', '$', ')'), 1), (('IN', '.', '$', ')', 'VBN'), 1), (('.', '$', ')', 'VBN', "''"), 1), (('$', ')', 'VBN', "''", 'VBZ'), 1), ((')', 'VBN', "''", 'VBZ', 'JJS'), 1), (('VBN', "''", 'VBZ', 'JJS', 'PRP'), 1), (("''", 'VBZ', 'JJS', 'PRP', 'WP$'), 1), (('VBZ', 'JJS', 'PRP', 'WP$', 'WP'), 1), (('JJS', 'PRP', 'WP$', 'WP', '('), 1), (('PRP', 'WP$', 'WP', '(', 'RBR'), 1), (('WP$', 'WP', '(', 'RBR', 'VB'), 1), (('WP', '(', 'RBR', 'VB', 'PDT'), 1), (('(', 'RBR', 'VB', 'PDT', 'MD'), 1), (('RBR', 'VB', 'PDT', 'MD', 'EX'), 1), (('VB', 'PDT', 'MD', 'EX', 'DT'), 1)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per frequenza decrescente: 
+[(('called', '“'), 2), (('’', 's'), 2), (('wasn', '’'), 2), (('visiting', 'theaters'), 1), (('keeps', 'anybody'), 1), (('been', 'Nolan'), 1), (('s', 'collaborators'), 1), (('“', 'Everyone'), 1), (('fraying', 'collar'), 1), (('cuff', 'links'), 1)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per probabilità condizionata massima: 
+[(('visiting', 'theaters'), 1.0), (('fraying', 'collar'), 1.0), (('cuff', 'links'), 1.0), (('striped', 'socks'), 1.0), (('dying', 'art'), 1.0), (('exacting', 'texture'), 1.0), (('projected', 'film'), 1.0), (('swinging', 'briefly'), 1.0), (('moseying', 'gait'), 1.0), (('expects', 'things'), 1.0)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per probabilità congiunta massima: 
+[(('visiting', 'theaters'), 0.00012106537530266344), (('fraying', 'collar'), 0.00012106537530266344), (('cuff', 'links'), 0.00012106537530266344), (('striped', 'socks'), 0.00012106537530266344), (('dying', 'art'), 0.00012106537530266344), (('exacting', 'texture'), 0.00012106537530266344), (('projected', 'film'), 0.00012106537530266344), (('swinging', 'briefly'), 0.00012106537530266344), (('moseying', 'gait'), 0.00012106537530266344), (('expects', 'things'), 0.00012106537530266344)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per MI massima: 
+[(('fraying', 'collar'), 13.01192606630681), (('cuff', 'links'), 13.01192606630681), (('striped', 'socks'), 13.01192606630681), (('swinging', 'briefly'), 13.01192606630681), (('moseying', 'gait'), 13.01192606630681), (('looping', 'plots'), 13.01192606630681), (('discriminating', 'sentences'), 13.01192606630681), (('recurring', 'invocation'), 13.01192606630681), (('Go', 'Gentle'), 13.01192606630681), (('graying', 'blond'), 13.01192606630681)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per LMI massima: 
+[(('fraying', 'collar'), 13.01192606630681), (('cuff', 'links'), 13.01192606630681), (('striped', 'socks'), 13.01192606630681), (('swinging', 'briefly'), 13.01192606630681), (('moseying', 'gait'), 13.01192606630681), (('looping', 'plots'), 13.01192606630681), (('discriminating', 'sentences'), 13.01192606630681), (('recurring', 'invocation'), 13.01192606630681), (('Go', 'Gentle'), 13.01192606630681), (('graying', 'blond'), 13.01192606630681)]
+
+Elementi comuni e numero di elementi comuni ai Top-10 per MI e LMI: 
+{(('discriminating', 'sentences'), 13.01192606630681), (('moseying', 'gait'), 13.01192606630681), (('fraying', 'collar'), 13.01192606630681), (('Go', 'Gentle'), 13.01192606630681), (('looping', 'plots'), 13.01192606630681), (('striped', 'socks'), 13.01192606630681), (('recurring', 'invocation'), 13.01192606630681), (('graying', 'blond'), 13.01192606630681), (('swinging', 'briefly'), 13.01192606630681), (('cuff', 'links'), 13.01192606630681)} (10)
+
+Frase con media di frequenza più alta: 
+“I don’t think that’s what it’s about. (1.25)
+
+Frase con media di frequenza più bassa: 
+facility outside London), even if he’s going to shoot just a few street-corner scenes. (1.0)
+
+Frase con probabilità di Markov più alta: 
+The Internet has become lousy with intersecting wormholes tunneled by warring pro-Nolan factions. (1.8477621383190385e-07)
+
+Percentuale di Stopwords: 
+37.917675544794186
+
+Numero di pronomi personali: 
+456
+
+Media di pronomi personali per frase: 
+1.8612244897959183
+
+Top-15 Named Entities: 
+{('PERSON', 'Nolan'): 92, ('PERSON', 'Jonah'): 6, ('PERSON', 'Caine'): 6, ('PERSON', 'Soderbergh'): 5, ('GPE', 'London'): 4, ('ORGANIZATION', 'Dark Knight'): 4, ('ORGANIZATION', 'Interstellar'): 4, ('PERSON', 'Cooper'): 4, ('GPE', 'English'): 4, ('PERSON', 'Emma'): 4, ('GPE', 'New York'): 3, ('GPE', 'Los Angeles'): 3, ('PERSON', 'Cole'): 3, ('ORGANIZATION', 'Bow Tie'): 3, ('ORGANIZATION', 'McConaughey'): 3}

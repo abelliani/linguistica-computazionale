@@ -1,0 +1,74 @@
+Risultati Corpus 1 - The Picture of Dorian Gray (Chapter I):
+Top-50 Sostantivi: 
+{'Gray': 23, 'Lord': 21, 'Basil': 21, 'Harry': 21, 'Henry': 20, 'Hallward': 16, 'art': 12, 'life': 12, 'time': 11, 'face': 11, 'thing': 11, 'people': 10, 'world': 10, 'man': 9, 'painter': 9, 'things': 8, 'beauty': 7, 'men': 7, 'course': 7, 'Lady': 7, 'garden': 6, 'portrait': 6, 'anything': 6, 'friend': 6, 'nothing': 6, 'soul': 6, 'Brandon': 6, 'idea': 6, 'day': 6, 'summer': 5, 'artist': 5, 'eyes': 5, 'work': 5, 'fellow': 5, 'reason': 5, 'something': 5, 'name': 5, 'personality': 5, 'studio': 4, 'way': 4, 'grass': 4, 'room': 4, 'expression': 4, 'picture': 4, 'romance': 4, 'heart': 4, 'Dorian': 4, 'nature': 4, 'everything': 4, 'Mr.': 4}
+
+Top-50 Avverbi: 
+{"n't": 38, 'not': 31, 'so': 18, 'never': 18, 'quite': 12, 'very': 11, 'too': 9, 'always': 9, 'really': 8, 'only': 8, 'up': 7, 'out': 7, 'more': 6, 'away': 6, 'merely': 6, 'simply': 6, 'there': 5, 'now': 5, 'ever': 5, 'much': 5, 'perfectly': 4, 'absolutely': 4, 'most': 4, 'horribly': 4, 'just': 3, 'hardly': 3, 'then': 3, 'anywhere': 3, 'back': 3, 'well': 3, 'down': 3, 'Now': 3, 'Perhaps': 3, 'once': 3, 'almost': 3, 'entirely': 3, 'Then': 3, 'ago': 2, 'suddenly': 2, 'certainly': 2, 'Not': 2, 'As': 2, 'soon': 2, 'far': 2, 'here': 2, 'Indeed': 2, 'together': 2, 'sometimes': 2, 'rather': 2, 'However': 2}
+
+Top-50 Aggettivi: 
+{'Dorian': 18, 'young': 9, 'dear': 9, 'good': 9, 'own': 8, 'best': 6, 'much': 6, 'more': 5, 'long': 5, 'little': 5, 'such': 5, 'many': 5, 'intellectual': 5, 'sure': 5, 'least': 5, 'other': 5, 'afraid': 5, 'new': 5, 'huge': 4, 'extraordinary': 4, 'curious': 4, 'old': 4, 'same': 4, 'real': 4, 'delightful': 4, 'beautiful': 4, 'great': 4, 'poor': 4, 'whole': 4, 'heavy': 3, 'able': 3, 'strange': 3, 'blue': 3, 'indifferent': 3, 'better': 3, 'wrong': 3, 'white': 3, 'first': 3, 'rich': 2, 'tremulous': 2, 'next': 2, 'dreadful': 2, 'worse': 2, 'only': 2, 'thin': 2, 'true': 2, 'natural': 2, 'mysterious': 2, 'modern': 2, 'marvellous': 2}
+
+Top-20 n-grammi per n=1: 
+[((',',), 371), (('.',), 308), (('the',), 211), (('I',), 165), (('of',), 144), (('to',), 121), (('and',), 114), (('is',), 100), (("''",), 97), (('a',), 96), (('``',), 95), (('that',), 86), (('in',), 75), (('it',), 71), (('you',), 65), (('me',), 53), (('he',), 47), (('have',), 45), (('was',), 41), (('his',), 41)]
+
+Top-20 n-grammi per n=2: 
+[((',', 'and'), 71), (('.', "''"), 50), (("''", '``'), 50), (('.', 'I'), 40), (('.', '``'), 36), ((',', "''"), 26), (('in', 'the'), 25), (('of', 'the'), 24), (('``', 'I'), 21), ((',', 'I'), 21), (('Dorian', 'Gray'), 21), (('Lord', 'Henry'), 20), (('.', 'The'), 20), (('I', 'have'), 17), (('I', 'am'), 17), (('.', 'It'), 16), (('him', '.'), 16), ((',', 'Harry'), 16), (('?', "''"), 16), (('do', "n't"), 15)]
+
+Top-20 n-grammi per n=3: 
+[(('.', "''", '``'), 40), (("''", '``', 'I'), 12), ((',', 'and', 'the'), 12), ((',', 'Harry', ','), 10), ((',', "''", 'said'), 9), (('I', 'do', "n't"), 9), (('.', 'It', 'is'), 9), (('?', "''", '``'), 9), (('Lord', 'Henry', ','), 8), ((',', "''", 'he'), 8), (('.', '``', 'I'), 8), ((',', 'Basil', ','), 7), (('Harry', ',', "''"), 6), (('Dorian', 'Gray', '.'), 6), (('``', 'I', 'do'), 5), (('.', "''", 'Lord'), 5), (("''", 'Lord', 'Henry'), 5), (("''", 'said', 'the'), 5), (('.', 'It', 'was'), 5), ((',', 'and', ','), 4)]
+
+Top-20 n-grammi di PoS per n=1: 
+[(('CC',), 1), (('NNP',), 1), (('CD',), 1), (('WDT',), 1), ((':',), 1), (('VBD',), 1), (('IN',), 1), (('.',), 1), (('VBN',), 1), (("''",), 1), (('VBZ',), 1), (('JJS',), 1), (('PRP',), 1), (('WP$',), 1), (('WP',), 1), (('RBR',), 1), (('VB',), 1), (('PDT',), 1), (('MD',), 1), (('EX',), 1)]
+
+Top-20 n-grammi di PoS per n=2: 
+[(('CC', 'NNP'), 1), (('NNP', 'CD'), 1), (('CD', 'WDT'), 1), (('WDT', ':'), 1), ((':', 'VBD'), 1), (('VBD', 'IN'), 1), (('IN', '.'), 1), (('.', 'VBN'), 1), (('VBN', "''"), 1), (("''", 'VBZ'), 1), (('VBZ', 'JJS'), 1), (('JJS', 'PRP'), 1), (('PRP', 'WP$'), 1), (('WP$', 'WP'), 1), (('WP', 'RBR'), 1), (('RBR', 'VB'), 1), (('VB', 'PDT'), 1), (('PDT', 'MD'), 1), (('MD', 'EX'), 1), (('EX', 'RB'), 1)]
+
+Top-20 n-grammi di PoS per n=3: 
+[(('CC', 'NNP', 'CD'), 1), (('NNP', 'CD', 'WDT'), 1), (('CD', 'WDT', ':'), 1), (('WDT', ':', 'VBD'), 1), ((':', 'VBD', 'IN'), 1), (('VBD', 'IN', '.'), 1), (('IN', '.', 'VBN'), 1), (('.', 'VBN', "''"), 1), (('VBN', "''", 'VBZ'), 1), (("''", 'VBZ', 'JJS'), 1), (('VBZ', 'JJS', 'PRP'), 1), (('JJS', 'PRP', 'WP$'), 1), (('PRP', 'WP$', 'WP'), 1), (('WP$', 'WP', 'RBR'), 1), (('WP', 'RBR', 'VB'), 1), (('RBR', 'VB', 'PDT'), 1), (('VB', 'PDT', 'MD'), 1), (('PDT', 'MD', 'EX'), 1), (('MD', 'EX', 'RB'), 1), (('EX', 'RB', 'DT'), 1)]
+
+Top-20 n-grammi di PoS per n=4: 
+[(('CC', 'NNP', 'CD', 'WDT'), 1), (('NNP', 'CD', 'WDT', ':'), 1), (('CD', 'WDT', ':', 'VBD'), 1), (('WDT', ':', 'VBD', 'IN'), 1), ((':', 'VBD', 'IN', '.'), 1), (('VBD', 'IN', '.', 'VBN'), 1), (('IN', '.', 'VBN', "''"), 1), (('.', 'VBN', "''", 'VBZ'), 1), (('VBN', "''", 'VBZ', 'JJS'), 1), (("''", 'VBZ', 'JJS', 'PRP'), 1), (('VBZ', 'JJS', 'PRP', 'WP$'), 1), (('JJS', 'PRP', 'WP$', 'WP'), 1), (('PRP', 'WP$', 'WP', 'RBR'), 1), (('WP$', 'WP', 'RBR', 'VB'), 1), (('WP', 'RBR', 'VB', 'PDT'), 1), (('RBR', 'VB', 'PDT', 'MD'), 1), (('VB', 'PDT', 'MD', 'EX'), 1), (('PDT', 'MD', 'EX', 'RB'), 1), (('MD', 'EX', 'RB', 'DT'), 1), (('EX', 'RB', 'DT', 'TO'), 1)]
+
+Top-20 n-grammi di PoS per n=5: 
+[(('CC', 'NNP', 'CD', 'WDT', ':'), 1), (('NNP', 'CD', 'WDT', ':', 'VBD'), 1), (('CD', 'WDT', ':', 'VBD', 'IN'), 1), (('WDT', ':', 'VBD', 'IN', '.'), 1), ((':', 'VBD', 'IN', '.', 'VBN'), 1), (('VBD', 'IN', '.', 'VBN', "''"), 1), (('IN', '.', 'VBN', "''", 'VBZ'), 1), (('.', 'VBN', "''", 'VBZ', 'JJS'), 1), (('VBN', "''", 'VBZ', 'JJS', 'PRP'), 1), (("''", 'VBZ', 'JJS', 'PRP', 'WP$'), 1), (('VBZ', 'JJS', 'PRP', 'WP$', 'WP'), 1), (('JJS', 'PRP', 'WP$', 'WP', 'RBR'), 1), (('PRP', 'WP$', 'WP', 'RBR', 'VB'), 1), (('WP$', 'WP', 'RBR', 'VB', 'PDT'), 1), (('WP', 'RBR', 'VB', 'PDT', 'MD'), 1), (('RBR', 'VB', 'PDT', 'MD', 'EX'), 1), (('VB', 'PDT', 'MD', 'EX', 'RB'), 1), (('PDT', 'MD', 'EX', 'RB', 'DT'), 1), (('MD', 'EX', 'RB', 'DT', 'TO'), 1), (('EX', 'RB', 'DT', 'TO', 'RP'), 1)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per frequenza decrescente: 
+[(('said', 'Lord'), 3), (('cried', 'Lord'), 3), (('asked', 'Lord'), 2), (('said', 'Basil'), 2), (('said', 'Hallward'), 2), (('like', 'persons'), 2), (('gave', 'rise'), 1), (('do', 'anything'), 1), (('want', 'something'), 1), (('know', 'nothing'), 1)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per probabilità condizionata massima: 
+[(('gave', 'rise'), 1.0), (('leave', 'town'), 1.0), (('believing', 'things'), 1.0), (('floated', 'past'), 1.0), (('hear', 'Basil'), 1.0), (('growing', 'pale'), 1.0), (('come', 'face'), 1.0), (('exclaimed', 'Hallward'), 1.0), (('discuss', 'politics'), 1.0), (('re-create', 'life'), 1.0)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per probabilità congiunta massima: 
+[(('gave', 'rise'), 0.00016795431642593214), (('leave', 'town'), 0.00016795431642593214), (('believing', 'things'), 0.00016795431642593214), (('floated', 'past'), 0.00016795431642593214), (('hear', 'Basil'), 0.00016795431642593214), (('growing', 'pale'), 0.00016795431642593214), (('come', 'face'), 0.00016795431642593214), (('exclaimed', 'Hallward'), 0.00016795431642593214), (('discuss', 'politics'), 0.00016795431642593214), (('re-create', 'life'), 0.00016795431642593214)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per MI massima: 
+[(('gave', 'rise'), 12.539643506238038), (('leave', 'town'), 12.539643506238038), (('floated', 'past'), 12.539643506238038), (('growing', 'pale'), 12.539643506238038), (('discuss', 'politics'), 12.539643506238038), (('bitterly', 'reproach'), 12.539643506238038), (('chirruping', 'sparrows'), 12.539643506238038), (('bring', 'ruin'), 11.539643506238036), (('love', 'secrecy'), 10.95468100551688), (('stood', 'blinking'), 10.95468100551688)]
+
+Top-10 Bigrammi Verbo-Sostantivo ordinati per LMI massima: 
+[(('cried', 'Lord'), 23.196865752541296), (('like', 'persons'), 16.739437009591448), (('said', 'Lord'), 16.019913484205016), (('asked', 'Lord'), 13.12472716547624), (('gave', 'rise'), 12.539643506238038), (('leave', 'town'), 12.539643506238038), (('floated', 'past'), 12.539643506238038), (('growing', 'pale'), 12.539643506238038), (('discuss', 'politics'), 12.539643506238038), (('bitterly', 'reproach'), 12.539643506238038)]
+
+Elementi comuni e numero di elementi comuni ai Top-10 per MI e LMI: 
+{(('gave', 'rise'), 12.539643506238038), (('floated', 'past'), 12.539643506238038), (('discuss', 'politics'), 12.539643506238038), (('bitterly', 'reproach'), 12.539643506238038), (('leave', 'town'), 12.539643506238038), (('growing', 'pale'), 12.539643506238038)} (6)
+
+Frase con media di frequenza più alta: 
+"I don't believe that, Harry, and I don't believe you do either. (1.5)
+
+Frase con media di frequenza più bassa: 
+But then in the church they don't
+think. (1.0)
+
+Frase con probabilità di Markov più alta: 
+My heart shall never be
+put under their microscope. (1.1743175805675803e-07)
+
+Percentuale di Stopwords: 
+38.56231105139402
+
+Numero di pronomi personali: 
+576
+
+Media di pronomi personali per frase: 
+1.6179775280898876
+
+Top-15 Named Entities: 
+{('PERSON', 'Harry'): 21, ('PERSON', 'Lord Henry'): 17, ('PERSON', 'Dorian Gray'): 13, ('PERSON', 'Basil'): 11, ('PERSON', 'Hallward'): 10, ('PERSON', 'Basil Hallward'): 6, ('PERSON', 'Lady Brandon'): 4, ('GPE', 'Dorian Gray'): 3, ('PERSON', 'Mr. Dorian Gray'): 3, ('GPE', 'Greek'): 2, ('GPE', 'Dorian'): 2, ('PERSON', 'Art'): 2, ('ORGANIZATION', 'Lord Henry'): 2, ('GPE', 'Persian'): 1, ('PERSON', 'Lord Henry Wotton'): 1}
