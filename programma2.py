@@ -53,7 +53,7 @@ def get_pos_tag(all_tokens):
     try:
         pos_tags = nltk.pos_tag(all_tokens)  # Calcola le parti del discorso dei token
         pos_only = [pos for token, pos in pos_tags]  # Crea una lista con le sole parti del discorso
-        return pos_tags, set(pos_only)
+        return pos_tags, pos_only
     except Exception as e:
         print(f"Errore durante il calcolo delle parti del discorso: {e}")
         return None, {}
@@ -96,7 +96,7 @@ def get_top_pos_ngrams(pos_only):
             ngrams_freq = FreqDist(ngrams)
             common_ngrams = ngrams_freq.most_common(TOP_N)
             for i in range(TOP_N):
-                top_pos_ngrams.append((common_ngrams[i][0], common_ngrams[i][1]))
+                top_pos_ngrams.append((common_ngrams[i][0], common_ngrams[i][1]))           
         return top_pos_ngrams
     except Exception as e:
         print(f"Errore durante il calcolo dei top-20 n-grammi di PoS: {e}")
@@ -322,15 +322,25 @@ def get_named_entities(all_tokens):
     try:
         TOP_NER = 15
         named_entities = nltk.ne_chunk(nltk.pos_tag(all_tokens))  # Estrae le Named Entities
-        named_entities_freq = FreqDist()
+        # Dizionario per memorizzare le entità per ogni classe
+        named_entities_by_label = {}
+
+        # Estrae le entità e le raggruppa per classe (label)
         for entity in named_entities:
-            if isinstance(entity, nltk.Tree):
+            if isinstance(entity, nltk.Tree):  # Verifica se è una Named Entity
                 entity_label = entity.label()
                 entity_words = ' '.join([token for token, pos in entity.leaves()])
-                named_entities_freq[(entity_label, entity_words)] += 1
 
-        top_named_entities = named_entities_freq.most_common(TOP_NER)
-        return dict(top_named_entities)
+                # Aggiungi l'entità alla lista corrispondente alla sua classe
+                if entity_label not in named_entities_by_label:
+                    named_entities_by_label[entity_label] = FreqDist()
+                named_entities_by_label[entity_label][entity_words] += 1
+
+        # Seleziona le top 15 entità per ogni classe
+        top_named_entities_by_label = {}
+        for label, freq_dist in named_entities_by_label.items():
+            top_named_entities_by_label[label] = freq_dist.most_common(TOP_NER)
+        return top_named_entities_by_label
     except Exception as e:
         print(f"Errore durante l'estrazione delle Named Entities: {e}")
         return None
@@ -384,7 +394,7 @@ def main(file_path):
         outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per probabilità congiunta massima: \n{max_joint_probability}\n")
         outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per MI massima: \n{max_mutual_information}\n")
         outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per LMI massima: \n{max_local_mutual_information}\n")
-        outfile.write(f"\nElementi comuni e numero di elementi comuni ai Top-10 per MI e LMI: \n{common_elements} ({common_elements_count})\n")
+        outfile.write(f"\nElementi comuni ai Top-10 per MI e LMI: \n{common_elements_count}\n")
         outfile.write(f"\nFrase con media di frequenza più alta: \n{max_sentence} ({max_avg_freq})\n")
         outfile.write(f"\nFrase con media di frequenza più bassa: \n{min_sentence} ({min_avg_freq})\n")
         outfile.write(f"\nFrase con probabilità di Markov più alta: \n{max_markov_sentence} ({max_markov_probability})\n")
