@@ -1,5 +1,6 @@
 # Programma 2 di Andrea Belliani, 596864, Progetto LC a.a. 2024-2025
 
+# Importo le librerie che mi servono
 import nltk
 import math
 from nltk import FreqDist
@@ -377,48 +378,48 @@ def main(file_path):
 
     top_named_entities = get_named_entities(all_tokens)
 
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as outfile:
-        if file_path == "corpus1.txt":
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as outfile: # Scrivo i risultati su file
+        if file_path == "corpus1.txt": 
             outfile.write("Risultati Corpus 1 - The Picture of Dorian Gray (Chapter I):\n")
         else:
             outfile.write("Risultati Corpus 2 - The Exacting, Expansive Mind of Christopher Nolan:\n")
-        outfile.write("\nTop 50 sostantivi più frequenti:\n")
-        for noun, freq in top_nouns.items():
+        outfile.write("\nTop 50 sostantivi più frequenti:\n") 
+        for noun, freq in top_nouns.items(): # Itero sui top-50 sostantivi e li salvo su file
             outfile.write(f"{noun} : {freq}\n")
 
         outfile.write("\nTop 50 avverbi più frequenti:\n")
-        for adverb, freq in top_adverbs.items():
+        for adverb, freq in top_adverbs.items(): # Itero sui top-50 avverbi e li salvo su file
             outfile.write(f"{adverb} : {freq}\n")
 
         outfile.write("\nTop 50 aggettivi più frequenti:\n")
-        for adjective, freq in top_adjectives.items():
+        for adjective, freq in top_adjectives.items(): # Itero sui top-50 aggettivi e li salvo su file
             outfile.write(f"{adjective} : {freq}\n")
-        for n in range(1, 4):
+        for n in range(1, 4): # itero su n per separare su righe diverse i top-20 n-grammi per n = [1,2,3] 
             outfile.write(f"\nTop-20 n-grammi per n={n}: \n")
-            for ngram, freq in top_ngrams[(n-1)*20:n*20]:
+            for ngram, freq in top_ngrams[(n-1)*20:n*20]: # Itero sui top-20 n-grammi e li salvo su file
                 outfile.write(f"{(ngram)} : {freq}\n")
-        for n in range(1, 6):
+        for n in range(1, 6): # itero su n per separare su righe diverse i top-20 n-grammi di PoS per n = [1,2,3,4,5]
             outfile.write(f"\nTop-20 n-grammi di PoS per n={n}: \n")
-            for pos_ngram, freq in top_pos_ngrams[(n-1)*20:n*20]:
+            for pos_ngram, freq in top_pos_ngrams[(n-1)*20:n*20]: # Itero sui top-20 n-grammi di PoS e li salvo su file
                 outfile.write(f"{pos_ngram} : {freq}\n")
-        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per frequenza decrescente: \n")
-        for bigram, freq in top_bigrams[:10]:
+        outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per frequenza decrescente: \n") 
+        for bigram, freq in top_bigrams[:10]: # Itero sui top-10 bigrammi e li salvo su file
             outfile.write(f"{bigram} : {freq}\n")
 
         outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per probabilità condizionata massima: \n")
-        for bigram, cond_prob in max_conditional_probability:
+        for bigram, cond_prob in max_conditional_probability: # Itero sui top-10 bigrammi per probabilità condizionata e li salvo su file
             outfile.write(f"{bigram} : {cond_prob}\n")
 
         outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per probabilità congiunta massima: \n")
-        for bigram, joint_prob in max_joint_probability:
+        for bigram, joint_prob in max_joint_probability: # Itero sui top-10 bigrammi per probabilità congiunta e li salvo su file
             outfile.write(f"{bigram} : {joint_prob}\n")
 
         outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per MI massima: \n")
-        for bigram, mi in max_mutual_information:
+        for bigram, mi in max_mutual_information: # Itero sui top-10 bigrammi per MI e li salvo su file
             outfile.write(f"{bigram} : {mi}\n")
 
         outfile.write(f"\nTop-10 Bigrammi Verbo-Sostantivo ordinati per LMI massima: \n")
-        for bigram, lmi in max_local_mutual_information:
+        for bigram, lmi in max_local_mutual_information: # Itero sui top-10 bigrammi per LMI e li salvo su file
             outfile.write(f"{bigram} : {lmi}\n")
         outfile.write(f"\nElementi comuni ai Top-10 per MI e LMI: \n{common_elements_count}\n")
         outfile.write(f"\nFrase con media di frequenza più alta: \n{max_sentence} ({max_avg_freq})\n")
@@ -428,7 +429,7 @@ def main(file_path):
         outfile.write(f"\nNumero di pronomi personali: \n{personal_pronouns_count}\n")
         outfile.write(f"\nMedia di pronomi personali per frase: \n{avg_personal_pronouns}\n")
         outfile.write(f"\nTop-15 Named Entities:\n")
-        for entity, freq in top_named_entities.items():
+        for entity, freq in top_named_entities.items(): # Itero sui top-15 Named Entities e li salvo su file
             outfile.write(f"{entity} : {freq}\n")
 
     

@@ -1,5 +1,6 @@
 # Programma 1 di Andrea Belliani, 596864, Progetto LC a.a. 2024-2025
 
+# Importo le librerie che mi servono
 import nltk
 import string
 from nltk import FreqDist
