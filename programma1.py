@@ -33,8 +33,8 @@ def read_file(file_path):
 # funzione che segmenta il testo in frasi e ne calcola il numero
 def get_sentences_and_length(text):
     try:
-        sentences = nltk.sent_tokenize(text) # Segmenta il testo in frasi
-        sentences_length = len(sentences) # Calcola il numero di frasi
+        sentences = nltk.sent_tokenize(text) # Segmento il testo in frasi
+        sentences_length = len(sentences) # Calcolo il numero di frasi
         return sentences, sentences_length
     except Exception as e:
         print(f"Errore imprevisto: {e}")
@@ -45,8 +45,8 @@ def get_tokens_and_length(sentences):
     try:
         all_tokens = []
         for sentence in sentences:
-            tokens = nltk.word_tokenize(sentence)  # Tokenizza ogni frase
-            all_tokens.extend(tokens)  # Aggiunge i token alla lista totale
+            tokens = nltk.word_tokenize(sentence)  # Tokenizzo ogni frase
+            all_tokens.extend(tokens)  # Aggiungo i token alla lista totale
         length_corpus = len(all_tokens)
         return all_tokens, length_corpus
     except Exception as e:
@@ -56,7 +56,7 @@ def get_tokens_and_length(sentences):
 # funzione che calcola la media della lunghezza delle frasi in token
 def get_avg_sentences_length(sentences_length, length_corpus):
     try:
-        avg_sentences_length = length_corpus / sentences_length  # Calcola la media della lunghezza delle frasi in token
+        avg_sentences_length = length_corpus / sentences_length  # Calcolo la media della lunghezza delle frasi in token
         return avg_sentences_length
     except Exception as e:
         print(f"Errore durante il calcolo della media: {e}")
@@ -65,13 +65,13 @@ def get_avg_sentences_length(sentences_length, length_corpus):
 # funzione che che calcola la media dei token (punteggiatura esclusa)
 def get_avg_tokens_length(all_tokens):
     try:
-        punctuation = set(string.punctuation) # Crea un set con i caratteri di punteggiatura
-        tokens_without_punct = [token for token in all_tokens if token not in punctuation] # Crea una lista di token senza punteggiatura
-        tokens_without_punct_length = len(tokens_without_punct) # Calcola la lunghezza della lista di token senza punteggiatura
+        punctuation = set(string.punctuation) # Creo un set con i caratteri di punteggiatura
+        tokens_without_punct = [token for token in all_tokens if token not in punctuation] # Creo una lista di token senza punteggiatura
+        tokens_without_punct_length = len(tokens_without_punct) # Calcolo la lunghezza della lista di token senza punteggiatura
         sum_tokens_length = 0
         for token in tokens_without_punct:
-            sum_tokens_length += len(token) # Calcola la somma delle lunghezze dei token senza punteggiatura
-        avg_tokens_length = sum_tokens_length / tokens_without_punct_length if tokens_without_punct_length > 0 else 0 # Calcola la media delle lunghezze dei token
+            sum_tokens_length += len(token) # Calcolo la somma delle lunghezze dei token senza punteggiatura
+        avg_tokens_length = sum_tokens_length / tokens_without_punct_length if tokens_without_punct_length > 0 else 0 # Calcolo la media delle lunghezze dei token
         return avg_tokens_length
     except Exception as e:
         print(f"Errore durante il calcolo della media: {e}")
@@ -80,9 +80,9 @@ def get_avg_tokens_length(all_tokens):
 # funzione che calcola la distribuzione delle parti del discorso
 def get_pos_distribution(all_tokens):
     try:
-        pos_tags = nltk.pos_tag(all_tokens) # Calcola le parti del discorso dei token
-        pos_only = [pos for token, pos in pos_tags] # Crea una lista con le sole parti del discorso
-        pos_distribution = FreqDist(pos_only) # Calcola la distribuzione delle parti del discorso
+        pos_tags = nltk.pos_tag(all_tokens) # Calcolo le parti del discorso dei token
+        pos_only = [pos for token, pos in pos_tags] # Creo una lista con le sole parti del discorso
+        pos_distribution = FreqDist(pos_only) # Calcolo la distribuzione delle parti del discorso
         return dict(pos_distribution)
     except Exception as e:
         print(f"Errore durante il calcolo delle parti del discorso: {e}")
@@ -96,25 +96,25 @@ def get_vocabulary_and_ttr(all_tokens):
         all_length_vocabulary = []  # Lista per salvare le dimensioni del vocabolario
         all_ttr = []  # Lista per salvare i TTR calcolati
 
-        step = 200  # Iniziamo con i primi 200 token
+        step = 200  # Inizio con i primi 200 token
         while step <= length_corpus:  
             if step + TTR_V_SLICING > length_corpus:
                 step = length_corpus  # Limita 'step' alla lunghezza totale del corpus
 
-            partial_tokens = all_tokens[:step]  # Prendi i primi 'step' token
+            partial_tokens = all_tokens[:step]  # Prendo i primi 'step' token
 
-            # Calcola il vocabolario e il TTR per questa finestra
+            # Calcolo il vocabolario e il TTR per questa finestra
             vocabulary = list(set(partial_tokens))  # Elenco di parole uniche (vocabolario)
             length_vocabulary = len(vocabulary)  # Numero di parole uniche (dimensione del vocabolario)
             ttr = length_vocabulary / len(partial_tokens)  # Calcolo del TTR
 
-            # Aggiungi i risultati alle liste
+            # Aggiungo i risultati alle liste
             all_length_vocabulary.append(length_vocabulary)
             all_ttr.append(ttr)
 
-            # Incrementa il passo
+            # Incremento
             step += TTR_V_SLICING
-        # Restituisci i risultati finali
+        # Restituisco i risultati finali
         return all_ttr, all_length_vocabulary
 
     except ZeroDivisionError:
@@ -127,9 +127,9 @@ def get_vocabulary_and_ttr(all_tokens):
 # funzione per la lemmatizzazione dei token
 def get_lemmas_and_length(all_tokens):
     try:
-        lemmatizer = WordNetLemmatizer()  # Inizializza il lemmatizzatore
-        lemmas = [lemmatizer.lemmatize(token) for token in all_tokens]  # Lemmatizza i token
-        length_lemmas = len(set(lemmas))  # Calcola il numero di lemmi unici
+        lemmatizer = WordNetLemmatizer()  # Inizializzo il lemmatizzatore
+        lemmas = [lemmatizer.lemmatize(token) for token in all_tokens]  # Lemmatizzo i token
+        length_lemmas = len(set(lemmas))  # Calcolo il numero di lemmi unici
         return length_lemmas
     except Exception as e:
         print(f"Errore durante la lemmatizzazione: {e}")
@@ -138,7 +138,7 @@ def get_lemmas_and_length(all_tokens):
 # funzione che calcola il numero medio di lemmi per frase
 def get_avg_lemmas_per_sentence(sentences_length, length_lemmas):
     try:
-        avg_lemmas_per_sentence = length_lemmas / sentences_length
+        avg_lemmas_per_sentence = length_lemmas / sentences_length # Calcolo il numero medio di lemmi per frase
         return avg_lemmas_per_sentence
     except Exception as e:
         print(f"Errore durante il calcolo della media: {e}")
@@ -186,8 +186,8 @@ def polarity_distribution(prediction):
     try:
         negative = prediction.count(0)
         positive = prediction.count(1)
-        negative_distribution = negative / len(prediction) * 100 if len(prediction) > 0 else 0
-        positive_distribution = positive / len(prediction) * 100 if len(prediction) > 0 else 0
+        negative_distribution = negative / len(prediction) * 100 if len(prediction) > 0 else 0 # Calcolo la distribuzione delle frasi negative
+        positive_distribution = positive / len(prediction) * 100 if len(prediction) > 0 else 0 # Calcolo la distribuzione delle frasi positive
         return positive_distribution, negative_distribution
     except Exception as e:
         print(f"Errore durante il calcolo della distribuzione: {e}")
@@ -196,7 +196,7 @@ def polarity_distribution(prediction):
 #funzione che calcola la polarità del corpus
 def total_polarity(prediction):
     try:
-        corpus_polarity = sum(prediction)
+        corpus_polarity = sum(prediction) # Calcolo la polarità totale del corpus
         return corpus_polarity
     except Exception as e:
         print(f"Errore durante il calcolo della polarità: {e}")
@@ -250,9 +250,9 @@ def main(file_path1, file_path2):
         outfile.write(f"Risultati Corpus 1 - The Picture of Dorian Gray (Chapter I):\nNumero di frasi: {sentences_length1}\nNumero di token: {length_corpus1}\nMedia lunghezza frasi: {avg_sentences_length1}\nMedia lunghezza token: {avg_tokens_length1}\nDistribuzione PoS primi 1000 token: {pos_distribution1}\nDimensione del vocabolario calcolata ogni 200 token: {length_vocabulary1}\nTTR calcolata ogni 200 token: {ttr1}\nNumeno di lemmi distinti: {length_lemmas1}\nNumero medio di lemmi per frase: {avg_lemmas_per_sentence1}\nDistribuzione di frasi positive: {positive_sentences1}\nDistribuzione di frasi negative: {negative_sentences1}\nPolarità del documento: {total_polarity1}\n\n")
         outfile.write(f"Risultati Corpus 2 - The Exacting, Expansive Mind of Christopher Nolan:\nNumero di frasi: {sentences_length2}\nNumero di token: {length_corpus2}\nMedia lunghezza frasi: {avg_sentences_length2}\nMedia lunghezza token: {avg_tokens_length2}\nDistribuzione PoS primi 1000 token: {pos_distribution2}\nDimensione del vocabolario calcolata ogni 200 token: {length_vocabulary2}\nTTR calcolata ogni 200 token: {ttr2}\nNumeno di lemmi distinti: {length_lemmas2}\nNumero medio di lemmi per frase: {avg_lemmas_per_sentence2}\nDistribuzione di frasi positive: {positive_sentences2}\nDistribuzione di frasi negative: {negative_sentences2}\nPolarità del documento: {total_polarity2}\n\n")
         outfile.write("Distribuzione delle parti del discorso (PoS):\n")
-        outfile.write("{:<10}  {:<10}  {:<10}\n".format("PoS", "Corpus 1", "Corpus 2"))  # Aggiunge formattazione per le intestazioni
+        outfile.write("{:<10}  {:<10}  {:<10}\n".format("PoS", "Corpus 1", "Corpus 2"))  # Aggiungo formattazione per le intestazioni delle colonne
         for pos in all_pos:
-            outfile.write("{:<10}  {:<10}  {:<10}\n".format(pos, pos_distribution1.get(pos, 0), pos_distribution2.get(pos, 0))) # Aggiunge formattazione per i dati
+            outfile.write("{:<10}  {:<10}  {:<10}\n".format(pos, pos_distribution1.get(pos, 0), pos_distribution2.get(pos, 0))) # Aggiungo formattazione per i dati delle colonne
 
 if __name__ == "__main__":
     # Definisco i percorsi dei file
